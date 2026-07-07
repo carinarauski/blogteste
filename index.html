@@ -1,72 +1,89 @@
-:root {
-    --bg-color: #f0f0f0;
-    --accent-color: #ff5733;
-    --text-color: #1a1a1a;
-    --card-bg: #ffffff;
-    --border-width: 3px;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professora 2026 | Arte & Educação Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 20px;
-}
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Profª Gabi <span class="year">.2026</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#blog">Artigos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
+    <section id="sobre" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">Arte & Educação Digital</span>
+                <h1>Lecionando no Futuro: A Arte de Ensinar em 2026</h1>
+                <p>Mesclando a sensibilidade das artes visuais com as novas fronteiras da educação digital. Sejam bem-vindos ao meu diário de bordo na educação pública e tecnológica.</p>
+                <a href="#blog" class="btn-primary">Ler o Blog</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://placehold.co/400x500/eaeaea/333333?text=Professora+Morena,+Cabelo+Liso+Longo,+Jaleco+Cinza" alt="Professora de Arte e Educação Digital, morena, olhos castanhos, cabelo liso um pouco abaixo do ombro, vestindo um jaleco cinza" class="hero-image">
+            </div>
+        </div>
+    </section>
 
-header h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    border-bottom: var(--border-width) solid var(--text-color);
-    display: inline-block;
-}
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Publicações Recentes</h2>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="card-image bg-card-1"></div>
+                    <div class="card-content">
+                        <span class="card-date">7 de Julho, 2026</span>
+                        <h3>I.A. na Sala de Aula de Artes: Aliada ou Rival?</h3>
+                        <p>Como tenho usado geradores de imagem para ensinar história da arte e composição visual para os meus alunos este ano.</p>
+                        <a href="#" class="read-more">Ler mais →</a>
+                    </div>
+                </article>
 
-.bento-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+                <article class="blog-card">
+                    <div class="card-image bg-card-2"></div>
+                    <div class="card-content">
+                        <span class="card-date">28 de Junho, 2026</span>
+                        <h3>Cultura Maker e Reciclagem Digital</h3>
+                        <p>Transformando sucata eletrônica em instalações artísticas interativas. O resumo do nosso último projeto escolar.</p>
+                        <a href="#" class="read-more">Ler mais →</a>
+                    </div>
+                </article>
 
-.card {
-    background: var(--card-bg);
-    border: var(--border-width) solid var(--text-color);
-    padding: 20px;
-    box-shadow: 8px 8px 0px var(--text-color); /* Efeito Neo Brutalista */
-    transition: transform 0.2s;
-}
+                <article class="blog-card">
+                    <div class="card-image bg-card-3"></div>
+                    <div class="card-content">
+                        <span class="card-date">15 de Maio, 2026</span>
+                        <h3>O Jaleco Cinza e a Tinta Guache</h3>
+                        <p>Um desabafo poético sobre manter a tradição do fazer artístico vivo em tempos de telas e realidades aumentadas.</p>
+                        <a href="#" class="read-more">Ler mais →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-.card:hover {
-    transform: translate(-4px, -4px);
-    box-shadow: 12px 12px 0px var(--accent-color);
-}
+    <footer id="contato">
+        <div class="container footer-content">
+            <p>&copy; 2026 - Conectando Arte e Tecnologia na Educação. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#">GitHub</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 
-.featured-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-.highlight {
-    grid-column: span 2;
-    background-color: var(--accent-color);
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .highlight {
-        grid-column: span 1;
-    }
-}
-
-footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.9rem;
-}
+</body>
+</html>
