@@ -1,50 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diário de Classe 2026 | Ser Professora</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+:root {
+    --bg-color: #f0f0f0;
+    --accent-color: #ff5733;
+    --text-color: #1a1a1a;
+    --card-bg: #ffffff;
+    --border-width: 3px;
+}
 
-    <header>
-        <h1>Educar em 2026</h1>
-        <p>A tecnologia evoluiu, mas o coração do ensino continua sendo humano.</p>
-    </header>
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
 
-    <main class="bento-grid">
-        <!-- Card de Imagem Gerada -->
-        <section class="card featured-image">
-            <img src="banner-blog.jpg" alt="Professora em 2026 usando tecnologia e acolhimento">
-        </section>
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-        <!-- Card de Reflexão -->
-        <article class="card highlight">
-            <h2>Humanidade na Era Digital</h2>
-            <p>Em 2026, ser professora é equilibrar o uso de IAs generativas com o cuidado emocional dos alunos.</p>
-        </article>
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    border-bottom: var(--border-width) solid var(--text-color);
+    display: inline-block;
+}
 
-        <!-- Card de Tendências -->
-        <section class="card secondary">
-            <h3>Espaços de Bem-Estar</h3>
-            <p>Formar docentes hoje significa criar ambientes que sustentem a colaboração.</p>
-        </section>
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        <!-- Card de Dicas -->
-        <section class="card secondary">
-            <h3>Metodologias 2026</h3>
-            <ul>
-                <li>Uso ético de IA</li>
-                <li>Design Sustentável</li>
-                <li>Foco no Protagonismo</li>
-            </ul>
-        </section>
-    </main>
+.card {
+    background: var(--card-bg);
+    border: var(--border-width) solid var(--text-color);
+    padding: 20px;
+    box-shadow: 8px 8px 0px var(--text-color); /* Efeito Neo Brutalista */
+    transition: transform 0.2s;
+}
 
-    <footer>
-        <p>&copy; 2026 - Criado com foco na educação integral.</p>
-    </footer>
+.card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px var(--accent-color);
+}
 
-</body>
-</html>
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.highlight {
+    grid-column: span 2;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .highlight {
+        grid-column: span 1;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
