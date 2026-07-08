@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professora 2026 | Arte & Educação Digital</title>
+    <title>Professora 2026 | Arte & Tech</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Fundo luminoso abstrato -->
+    <div class="blob-bg-1"></div>
+    <div class="blob-bg-2"></div>
+
     <header class="navbar">
         <div class="container">
-            <a href="#" class="logo">Profª Carina <span class="year">.2026</span></a>
+            <a href="#" class="logo">Profª <span class="highlight">Carina</span></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#blog">Artigos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
@@ -22,61 +27,120 @@
         </div>
     </header>
 
+    <!-- Seção Principal -->
     <section id="sobre" class="hero-section">
         <div class="container hero-grid">
             <div class="hero-content">
-                <span class="badge">Arte & Educação Digital</span>
-                <h1>Lecionando no Futuro: A Arte de Ensinar em 2026</h1>
-                <p>Mesclando a sensibilidade das artes visuais com as novas fronteiras da educação digital. Sejam bem-vindos ao meu diário de bordo na educação pública e tecnológica.</p>
-                <a href="#blog" class="btn-primary">Ler o Blog</a>
+                <span class="badge">Arte & Educação Digital .2026</span>
+                <h1>Criatividade Sem Limites nas Telas e Telas</h1>
+                <p>Explorando a fusão de pixels, inteligência artificial e arte digital. Sejam bem-vindos ao meu laboratório de inovação criativa!</p>
+                <div class="hero-buttons">
+                    <a href="#blog" class="btn-primary">Explorar Artigos</a>
+                    <a href="#galeria" class="btn-secondary">Ver Galeria</a>
+                </div>
             </div>
-            <div class="hero-image-wrapper">
-                <img src="Gemini_Generated_Image_pz6vxcpz6vxcpz6v.png" alt="Professora de Arte e Educação Digital" class="hero-image">
+            <div class="hero-image-container">
+                <div class="image-glow-effect"></div>
+                <!-- Nova imagem oficial gerada inserida aqui -->
+                <img src="Gemini_Generated_Image_pz6vxcpz6vxcpz6v.png" alt="Professora de arte e educação digital" class="profile-img">
             </div>
         </div>
     </section>
 
+    <!-- Galeria Visual -->
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>O Futuro é Visual</h2>
+                <p>Projetos, modelagens 3D e exposições virtuais criadas em sala de aula.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item size-large" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800');">
+                    <div class="gallery-overlay"><span>Modelagem 3D & Criatividade</span></div>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&q=80&w=500');">
+                    <div class="gallery-overlay"><span>Design Generativo</span></div>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=500');">
+                    <div class="gallery-overlay"><span>Arte em Telas Digitais</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção do Blog com Botões de Curtida -->
     <section id="blog" class="blog-section">
         <div class="container">
-            <h2 class="section-title">Publicações Recentes</h2>
+            <div class="section-header">
+                <h2>Diário de Bordo Digital</h2>
+            </div>
             
             <div class="blog-grid">
+                <!-- Card 1 -->
                 <article class="blog-card">
-                    <div class="card-image bg-card-1"></div>
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=600" alt="Cores neon fluidas" class="card-img">
+                    </div>
                     <div class="card-content">
-                        <span class="card-date">7 de Julho, 2026</span>
-                        <h3>I.A. na Sala de Aula de Artes: Aliada ou Rival?</h3>
-                        <p>Como tenho usado geradores de imagem para ensinar história da arte e composição visual para os meus alunos este ano.</p>
-                        <a href="#" class="read-more">Ler mais →</a>
+                        <span class="card-tag tag-tech">Inteligência Artificial</span>
+                        <h3>Prompt Art: Nova Matéria no Currículo?</h3>
+                        <p>Como guiar estudantes a criarem conceitos visuais complexos usando termos técnicos e referências de grandes pintores.</p>
+                        
+                        <div class="card-footer">
+                            <a href="#" class="read-more">Ler mais →</a>
+                            <!-- Botão de Curtir Interativo -->
+                            <button class="like-btn" onclick="likePost(this)">
+                                <span class="heart-icon">❤️</span> <span class="like-count">12</span>
+                            </button>
+                        </div>
                     </div>
                 </article>
 
+                <!-- Card 2 -->
                 <article class="blog-card">
-                    <div class="card-image bg-card-2"></div>
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600" alt="Tecnologia cibernética" class="card-img">
+                    </div>
                     <div class="card-content">
-                        <span class="card-date">28 de Junho, 2026</span>
-                        <h3>Cultura Maker e Reciclagem Digital</h3>
-                        <p>Transformando sucata eletrônica em instalações artísticas interativas. O resumo do nosso último projeto escolar.</p>
-                        <a href="#" class="read-more">Ler mais →</a>
+                        <span class="card-tag tag-art">Cultura Maker</span>
+                        <h3>Esculturas de Luz e Sucata Digital</h3>
+                        <p>Dando uma nova vida artística a cabos HDMI, teclados velhos e monitores quebrados que iriam para o lixo.</p>
+                        
+                        <div class="card-footer">
+                            <a href="#" class="read-more">Ler mais →</a>
+                            <button class="like-btn" onclick="likePost(this)">
+                                <span class="heart-icon">❤️</span> <span class="like-count">8</span>
+                            </button>
+                        </div>
                     </div>
                 </article>
 
+                <!-- Card 3 -->
                 <article class="blog-card">
-                    <div class="card-image bg-card-3"></div>
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&q=80&w=600" alt="Pintura abstrata colorida" class="card-img">
+                    </div>
                     <div class="card-content">
-                        <span class="card-date">15 de Maio, 2026</span>
-                        <h3>A seriedade e o lúdico</h3>
-                        <p>Um desabafo poético sobre manter a tradição do fazer artístico vivo em tempos de telas e realidades aumentadas.</p>
-                        <a href="#" class="read-more">Ler mais →</a>
+                        <span class="card-tag tag-edu">Crônica</span>
+                        <h3>Telas Coloridas</h3>
+                        <p>Mesmo vestindo a sobriedade exigida pelo laboratório, a sala de aula explode em matizes coloridos digitais todos os dias.</p>
+                        
+                        <div class="card-footer">
+                            <a href="#" class="read-more">Ler mais →</a>
+                            <button class="like-btn" onclick="likePost(this)">
+                                <span class="heart-icon">❤️</span> <span class="like-count">24</span>
+                            </button>
+                        </div>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
+    <!-- Rodapé Neon -->
     <footer id="contato">
         <div class="container footer-content">
-            <p>&copy; 2026 - Conectando Arte e Tecnologia na Educação. Todos os direitos reservados.</p>
+            <p>&copy; 2026 - Conectando Arte e Tecnologia na Educação.</p>
             <div class="social-icons">
                 <a href="#">GitHub</a>
                 <a href="#">Instagram</a>
@@ -84,6 +148,26 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lógica de Funcionamento do Botão de Curtir -->
+    <script>
+        function likePost(button) {
+            // Seleciona o contador de texto dentro do botão clicado
+            const countElement = button.querySelector('.like-count');
+            let currentLikes = parseInt(countElement.innerText);
+            
+            // Verifica se o usuário já curtiu (adicionando uma classe de estado)
+            if (!button.classList.contains('liked')) {
+                currentLikes++;
+                countElement.innerText = currentLikes;
+                button.classList.add('liked');
+            } else {
+                currentLikes--;
+                countElement.innerText = currentLikes;
+                button.classList.remove('liked');
+            }
+        }
+    </script>
 
 </body>
 </html>
